@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Gb-O2-Ync">
-                                <rect key="frame" x="20" y="292" width="350" height="260"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9Gb-O2-Ync">
+                                <rect key="frame" x="20" y="289" width="350" height="266"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="owT-gk-uh0">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="130"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-fj-lRh">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="130"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="l5E-hl-wUl"/>
                                                 </constraints>
@@ -37,14 +37,18 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TemperatureCell" id="zyE-El-pFx" customClass="TemperatureCell" customModule="CollectionView_SF" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="1" width="128" height="128"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3x3-cz-1Yf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NKu-VA-wg6">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="130" id="FHz-Eb-NFV"/>
+                                                                        <constraint firstAttribute="width" constant="130" id="s4B-of-gr6"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -55,7 +59,7 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <connections>
-                                                            <outlet property="imageView" destination="NKu-VA-wg6" id="D0F-jr-5Ux"/>
+                                                            <outlet property="tempImageView" destination="NKu-VA-wg6" id="D0F-jr-5Ux"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -63,11 +67,11 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-yf-sqv">
-                                        <rect key="frame" x="0.0" y="130" width="350" height="130"/>
+                                        <rect key="frame" x="0.0" y="136" width="350" height="130"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-qb-dQZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="130"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="gbX-Zk-liA"/>
                                                 </constraints>
@@ -78,7 +82,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SmileCell" id="e0y-mC-1fX" customClass="SmileCell" customModule="CollectionView_SF" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="SmileCell" id="e0y-mC-1fX" customClass="SmileCell" customModule="CollectionView_SF" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7VQ-eD-gfG">
@@ -87,6 +91,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7da-yj-ETY">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="130" id="Hus-0N-k99"/>
+                                                                        <constraint firstAttribute="height" constant="130" id="zwu-bg-1cw"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -125,16 +133,39 @@
             </objects>
             <point key="canvasLocation" x="20" y="66.824644549763036"/>
         </scene>
+        <!--Detaile View Controller-->
+        <scene sceneID="Phm-it-2ya">
+            <objects>
+                <viewController storyboardIdentifier="ShowVC" id="IP4-HU-16h" customClass="DetaileViewController" customModule="CollectionView_SF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AE4-df-9Ok">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-Ir-Ojf">
+                                <rect key="frame" x="20" y="202" width="350" height="283"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o4y-mu-YUV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bAB-Ir-Ojf" firstAttribute="leading" secondItem="o4y-mu-YUV" secondAttribute="leading" constant="20" id="B0T-9z-ccP"/>
+                            <constraint firstItem="o4y-mu-YUV" firstAttribute="bottom" secondItem="bAB-Ir-Ojf" secondAttribute="bottom" constant="325" id="d8K-fg-XzL"/>
+                            <constraint firstItem="o4y-mu-YUV" firstAttribute="trailing" secondItem="bAB-Ir-Ojf" secondAttribute="trailing" constant="20" id="l8T-f2-9ag"/>
+                            <constraint firstItem="bAB-Ir-Ojf" firstAttribute="top" secondItem="o4y-mu-YUV" secondAttribute="top" constant="158" id="tgT-ZD-0oh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detaileImage" destination="bAB-Ir-Ojf" id="c9A-rt-SVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aeg-Q5-9FP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804.61538461538464" y="66.824644549763036"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

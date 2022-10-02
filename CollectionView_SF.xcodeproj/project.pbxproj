@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0121D528E93459002DE87F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0121D428E93459002DE87F /* Resource.swift */; };
+		1A0121D728E93882002DE87F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0121D628E93882002DE87F /* Model.swift */; };
+		1A0121DB28E945CE002DE87F /* DetaileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0121DA28E945CE002DE87F /* DetaileViewController.swift */; };
+		1A0121DF28E9883C002DE87F /* Detaile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0121DD28E9883C002DE87F /* Detaile.storyboard */; };
 		1AD4967828E916A300869B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4967728E916A300869B56 /* AppDelegate.swift */; };
 		1AD4967A28E916A300869B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4967928E916A300869B56 /* SceneDelegate.swift */; };
 		1AD4967C28E916A300869B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4967B28E916A300869B56 /* ViewController.swift */; };
@@ -14,14 +18,14 @@
 		1AD4968128E916A400869B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4968028E916A400869B56 /* Assets.xcassets */; };
 		1AD4968428E916A400869B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4968228E916A400869B56 /* LaunchScreen.storyboard */; };
 		1AD4968E28E9197200869B56 /* SmileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4968D28E9197200869B56 /* SmileCell.swift */; };
-		1AD4969028E91CEA00869B56 /* TemperatureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */; };
-		1AD4969228E91EDB00869B56 /* TemperatureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */; };
 		1AD4969428E9245B00869B56 /* TemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969328E9245B00869B56 /* TemperatureCell.swift */; };
-		1AD4969D28E92EAE00869B56 /* SmileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */; };
-		1AD4969F28E92EBD00869B56 /* SmileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0121D428E93459002DE87F /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		1A0121D628E93882002DE87F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1A0121DA28E945CE002DE87F /* DetaileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaileViewController.swift; sourceTree = "<group>"; };
+		1A0121DE28E9883C002DE87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CollectionView_SF/MainScreen/Controller/Base.lproj/Detaile.storyboard; sourceTree = "<group>"; };
 		1AD4967428E916A300869B56 /* CollectionView_SF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView_SF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD4967728E916A300869B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD4967928E916A300869B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,11 +35,7 @@
 		1AD4968328E916A400869B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD4968528E916A400869B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD4968D28E9197200869B56 /* SmileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileCell.swift; sourceTree = "<group>"; };
-		1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDataSource.swift; sourceTree = "<group>"; };
-		1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDelegate.swift; sourceTree = "<group>"; };
 		1AD4969328E9245B00869B56 /* TemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCell.swift; sourceTree = "<group>"; };
-		1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileDataSource.swift; sourceTree = "<group>"; };
-		1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0121D828E94548002DE87F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4969528E92D8000869B56 /* Model */,
+				1AD4969628E92D8C00869B56 /* View */,
+				1AD4969728E92D9600869B56 /* Controller */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		1A0121D928E94571002DE87F /* DetaileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1A0121DC28E97F1A002DE87F /* Controller */,
+			);
+			path = DetaileScreen;
+			sourceTree = "<group>";
+		};
+		1A0121DC28E97F1A002DE87F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A0121DD28E9883C002DE87F /* Detaile.storyboard */,
+				1A0121DA28E945CE002DE87F /* DetaileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1AD4966B28E916A300869B56 = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +95,10 @@
 		1AD4967628E916A300869B56 /* CollectionView_SF */ = {
 			isa = PBXGroup;
 			children = (
+				1A0121D828E94548002DE87F /* MainScreen */,
+				1A0121D928E94571002DE87F /* DetaileScreen */,
 				1AD4969928E92DBE00869B56 /* Resources */,
 				1AD4969828E92DA800869B56 /* SuppportingFiles */,
-				1AD4969728E92D9600869B56 /* Controller */,
-				1AD4969628E92D8C00869B56 /* View */,
-				1AD4969528E92D8000869B56 /* Model */,
 			);
 			path = CollectionView_SF;
 			sourceTree = "<group>";
@@ -80,6 +106,7 @@
 		1AD4969528E92D8000869B56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A0121D628E93882002DE87F /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +144,7 @@
 			children = (
 				1AD4968028E916A400869B56 /* Assets.xcassets */,
 				1AD4968228E916A400869B56 /* LaunchScreen.storyboard */,
+				1A0121D428E93459002DE87F /* Resource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,8 +152,6 @@
 		1AD4969A28E92E0000869B56 /* Temperature */ = {
 			isa = PBXGroup;
 			children = (
-				1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */,
-				1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */,
 				1AD4969328E9245B00869B56 /* TemperatureCell.swift */,
 			);
 			path = Temperature;
@@ -134,8 +160,6 @@
 		1AD4969B28E92E0E00869B56 /* Smile */ = {
 			isa = PBXGroup;
 			children = (
-				1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */,
-				1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */,
 				1AD4968D28E9197200869B56 /* SmileCell.swift */,
 			);
 			path = Smile;
@@ -201,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD4968428E916A400869B56 /* LaunchScreen.storyboard in Resources */,
+				1A0121DF28E9883C002DE87F /* Detaile.storyboard in Resources */,
 				1AD4968128E916A400869B56 /* Assets.xcassets in Resources */,
 				1AD4967F28E916A400869B56 /* Main.storyboard in Resources */,
 			);
@@ -237,11 +262,10 @@
 				1AD4967C28E916A300869B56 /* ViewController.swift in Sources */,
 				1AD4967828E916A300869B56 /* AppDelegate.swift in Sources */,
 				1AD4968E28E9197200869B56 /* SmileCell.swift in Sources */,
-				1AD4969F28E92EBD00869B56 /* SmileDelegate.swift in Sources */,
-				1AD4969228E91EDB00869B56 /* TemperatureDelegate.swift in Sources */,
+				1A0121D528E93459002DE87F /* Resource.swift in Sources */,
+				1A0121DB28E945CE002DE87F /* DetaileViewController.swift in Sources */,
 				1AD4967A28E916A300869B56 /* SceneDelegate.swift in Sources */,
-				1AD4969D28E92EAE00869B56 /* SmileDataSource.swift in Sources */,
-				1AD4969028E91CEA00869B56 /* TemperatureDataSource.swift in Sources */,
+				1A0121D728E93882002DE87F /* Model.swift in Sources */,
 				1AD4969428E9245B00869B56 /* TemperatureCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +273,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1A0121DD28E9883C002DE87F /* Detaile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0121DE28E9883C002DE87F /* Base */,
+			);
+			name = Detaile.storyboard;
+			sourceTree = "<group>";
+		};
 		1AD4967D28E916A400869B56 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

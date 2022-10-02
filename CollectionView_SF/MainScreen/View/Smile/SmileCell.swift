@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SmileCell: UICollectionViewCell {
+final class SmileCell: UICollectionViewCell {
 
     static var identifier: String {
         return String(describing: self)
@@ -15,4 +15,7 @@ class SmileCell: UICollectionViewCell {
     
     @IBOutlet weak var smileImagView: UIImageView!
 
+    func setSmileImage(string: String) {
+        smileImagView.image = UIImage(named: string)
+    }
 }
