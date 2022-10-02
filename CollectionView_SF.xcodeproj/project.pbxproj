@@ -13,6 +13,12 @@
 		1AD4967F28E916A400869B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4967D28E916A400869B56 /* Main.storyboard */; };
 		1AD4968128E916A400869B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4968028E916A400869B56 /* Assets.xcassets */; };
 		1AD4968428E916A400869B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4968228E916A400869B56 /* LaunchScreen.storyboard */; };
+		1AD4968E28E9197200869B56 /* SmileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4968D28E9197200869B56 /* SmileCell.swift */; };
+		1AD4969028E91CEA00869B56 /* TemperatureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */; };
+		1AD4969228E91EDB00869B56 /* TemperatureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */; };
+		1AD4969428E9245B00869B56 /* TemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969328E9245B00869B56 /* TemperatureCell.swift */; };
+		1AD4969D28E92EAE00869B56 /* SmileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */; };
+		1AD4969F28E92EBD00869B56 /* SmileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1AD4968028E916A400869B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD4968328E916A400869B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD4968528E916A400869B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD4968D28E9197200869B56 /* SmileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileCell.swift; sourceTree = "<group>"; };
+		1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDataSource.swift; sourceTree = "<group>"; };
+		1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDelegate.swift; sourceTree = "<group>"; };
+		1AD4969328E9245B00869B56 /* TemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCell.swift; sourceTree = "<group>"; };
+		1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileDataSource.swift; sourceTree = "<group>"; };
+		1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		1AD4967628E916A300869B56 /* CollectionView_SF */ = {
 			isa = PBXGroup;
 			children = (
-				1AD4967728E916A300869B56 /* AppDelegate.swift */,
-				1AD4967928E916A300869B56 /* SceneDelegate.swift */,
-				1AD4967B28E916A300869B56 /* ViewController.swift */,
-				1AD4967D28E916A400869B56 /* Main.storyboard */,
-				1AD4968028E916A400869B56 /* Assets.xcassets */,
-				1AD4968228E916A400869B56 /* LaunchScreen.storyboard */,
-				1AD4968528E916A400869B56 /* Info.plist */,
+				1AD4969928E92DBE00869B56 /* Resources */,
+				1AD4969828E92DA800869B56 /* SuppportingFiles */,
+				1AD4969728E92D9600869B56 /* Controller */,
+				1AD4969628E92D8C00869B56 /* View */,
+				1AD4969528E92D8000869B56 /* Model */,
 			);
 			path = CollectionView_SF;
+			sourceTree = "<group>";
+		};
+		1AD4969528E92D8000869B56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AD4969628E92D8C00869B56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4969A28E92E0000869B56 /* Temperature */,
+				1AD4969B28E92E0E00869B56 /* Smile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AD4969728E92D9600869B56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4967D28E916A400869B56 /* Main.storyboard */,
+				1AD4967B28E916A300869B56 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD4969828E92DA800869B56 /* SuppportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4967728E916A300869B56 /* AppDelegate.swift */,
+				1AD4967928E916A300869B56 /* SceneDelegate.swift */,
+				1AD4968528E916A400869B56 /* Info.plist */,
+			);
+			path = SuppportingFiles;
+			sourceTree = "<group>";
+		};
+		1AD4969928E92DBE00869B56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4968028E916A400869B56 /* Assets.xcassets */,
+				1AD4968228E916A400869B56 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1AD4969A28E92E0000869B56 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4968F28E91CEA00869B56 /* TemperatureDataSource.swift */,
+				1AD4969128E91EDB00869B56 /* TemperatureDelegate.swift */,
+				1AD4969328E9245B00869B56 /* TemperatureCell.swift */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+		1AD4969B28E92E0E00869B56 /* Smile */ = {
+			isa = PBXGroup;
+			children = (
+				1AD4969C28E92EAE00869B56 /* SmileDataSource.swift */,
+				1AD4969E28E92EBD00869B56 /* SmileDelegate.swift */,
+				1AD4968D28E9197200869B56 /* SmileCell.swift */,
+			);
+			path = Smile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +150,7 @@
 			buildPhases = (
 				1AD4967028E916A300869B56 /* Sources */,
 				1AD4967128E916A300869B56 /* Frameworks */,
+				1A0121D328E93279002DE87F /* SwiftLint */,
 				1AD4967228E916A300869B56 /* Resources */,
 			);
 			buildRules = (
@@ -133,6 +208,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A0121D328E93279002DE87F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AD4967028E916A300869B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +236,13 @@
 			files = (
 				1AD4967C28E916A300869B56 /* ViewController.swift in Sources */,
 				1AD4967828E916A300869B56 /* AppDelegate.swift in Sources */,
+				1AD4968E28E9197200869B56 /* SmileCell.swift in Sources */,
+				1AD4969F28E92EBD00869B56 /* SmileDelegate.swift in Sources */,
+				1AD4969228E91EDB00869B56 /* TemperatureDelegate.swift in Sources */,
 				1AD4967A28E916A300869B56 /* SceneDelegate.swift in Sources */,
+				1AD4969D28E92EAE00869B56 /* SmileDataSource.swift in Sources */,
+				1AD4969028E91CEA00869B56 /* TemperatureDataSource.swift in Sources */,
+				1AD4969428E9245B00869B56 /* TemperatureCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +391,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TFP9B86SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CollectionView_SF/Info.plist;
+				INFOPLIST_FILE = CollectionView_SF/SuppportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +419,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TFP9B86SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CollectionView_SF/Info.plist;
+				INFOPLIST_FILE = CollectionView_SF/SuppportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
